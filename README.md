@@ -2,6 +2,7 @@
 > A J-Pop lyric website designed to help Japanese learners bridge the gap between music and meaning.
 
 Background: I created this platform back then when I was at JLPT N5 to combine my passion for a Japanese band called **Official Hige Dandism** with web engineering. 
+
 Goal: Now as a Japanese learner (currently JLPT N3), I'm thinking about evolving this project from a static HTML site into a dynamic, single-page application focused on **UX Accessibility** and **Language Education**.
 
 Key Technical Improvements
