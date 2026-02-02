@@ -1,4 +1,4 @@
-let currentLang = 'jp';
+let currentLang = localStorage.getItem('preferredLang') || 'jp';
 
 const homeData = {
     jp: {
@@ -19,32 +19,6 @@ const homeData = {
     }
 }
 
-function changeHomeLanguage() {
-    const title = document.getElementById('website-title');
-    const navHome = document.getElementById('nav-home');
-    const navOfficial = document.getElementById('nav-official');
-    const welcomeMsg = document.getElementById('welcome-msg');
-    const welcomeSub = document.getElementById('welcome-sub');
-    const btn = document.getElementById('lang-btn');
-
-    if (currentLang === 'jp') {
-        title.innerText = homeData.en.title;
-        navHome.innerText = homeData.en.home;
-        navOfficial.innerText = homeData.en.official;
-        if (welcomeMsg) welcomeMsg.innerText = homeData.en.welcome;
-        if (welcomeSub) welcomeSub.innerText = homeData.en.sub;
-        btn.innerText = homeData.en.btn;
-        currentLang = 'en';
-    } else {
-        title.innerText = homeData.jp.title;
-        navHome.innerText = homeData.jp.home;
-        navOfficial.innerText = homeData.jp.official;
-        if (welcomeMsg) welcomeMsg.innerText = homeData.jp.welcome;
-        if (welcomeSub) welcomeSub.innerText = homeData.jp.sub;
-        btn.innerText = homeData.jp.btn;
-        currentLang = 'jp';
-    }
-}
 const songData = {
     title: "Same Blue",
     jp: `気持ちの整理がつかないままの朝に 散らかったそれを鞄に詰め込んだ
@@ -135,21 +109,29 @@ const songData = {
         We’re spending this season named under you as declared`
 }
 
-function changeLanguage() {
-    const content = document.getElementById('lyric-content');
-    const btn = document.getElementById('lang-btn');
+function toggleLanguage() {
+    const targetLang = (currentLang === 'jp') ? 'en' : 'jp';
+    //exists on all pages
+    document.getElementById('website-title').innerText = homeData[targetLang].title;
+    document.getElementById('nav-home').innerText = homeData[targetLang].home;
+    document.getElementById('nav-official').innerText = homeData[targetLang].official;
+    document.getElementById('lang-btn').innerText = homeData[targetLang].btn;
 
-    content.classList.add('fade-out');
+    const welcomeMsg = document.getElementById('welcome-msg');
+    const welcomeSub = document.getElementById('welcome-sub');
+    const lyricContent = document.getElementById('lyric-content');
+    //update only if they are on the page
+    if (welcomeMsg) welcomeMsg.innerText = homeData[targetLang].welcome;
+    if (welcomeSub) welcomeSub.innerText = homeData[targetLang].sub;
+    if (lyricContent) lyricContent.innerText = songData[targetLang];
 
-    setTimeout(() => {
-        if (currentLang === 'jp') {
-            content.innerText = songData.en;
-            btn.innerText = "Switch to English";
-            currentLang = 'en';
-        } else {
-            content.innerText = songData.jp;
-            btn.innerText = "日本語に切り替える";
-            currentLang = 'jp';
+    currentLang = targetLang;
+    localStorage.setItem('preferredLang', currentLang);
+}
+
+window.onload = function() {
+    if (currentLang === 'en') {
+        currentLang = 'jp';
+        toggleLanguage();
     }
-    content.classList.remove('fade-out');},400); 
 }
