@@ -1,3 +1,50 @@
+let currentLang = 'jp';
+
+const homeData = {
+    jp: {
+        title: `ヒゲダンの架け橋`,
+        home: `ホーム`,
+        official: "オフィシャルサイト",
+        welcome: `こんにちは! ここはJ-POPバンドOfficial髭男dismというのファンサイトです！`,
+        sub: `歌詞の翻訳をここにポストします！ よろしくお願いします！❤️`,
+        btn: `Switch to English`
+    },
+    en: {
+        title: "Higedan Bridge",
+        home: "Home",
+        official: "Official Site",
+        welcome: `Hello! This is a fan site for the J-POP band Official HIGE DANdism!`,
+        sub: `I will post lyrics and translations here!❤️`,
+        btn: `日本語に切り替える`
+    }
+}
+
+function changeHomeLanguage() {
+    const title = document.getElementById('website-title');
+    const navHome = document.getElementById('nav-home');
+    const navOfficial = document.getElementById('nav-official');
+    const welcomeMsg = document.getElementById('welcome-msg');
+    const welcomeSub = document.getElementById('welcome-sub');
+    const btn = document.getElementById('lang-btn');
+
+    if (currentLang === 'jp') {
+        title.innerText = homeData.en.title;
+        navHome.innerText = homeData.en.home;
+        navOfficial.innerText = homeData.en.official;
+        if (welcomeMsg) welcomeMsg.innerText = homeData.en.welcome;
+        if (welcomeSub) welcomeSub.innerText = homeData.en.sub;
+        btn.innerText = homeData.en.btn;
+        currentLang = 'en';
+    } else {
+        title.innerText = homeData.jp.title;
+        navHome.innerText = homeData.jp.home;
+        navOfficial.innerText = homeData.jp.official;
+        if (welcomeMsg) welcomeMsg.innerText = homeData.jp.welcome;
+        if (welcomeSub) welcomeSub.innerText = homeData.jp.sub;
+        btn.innerText = homeData.jp.btn;
+        currentLang = 'jp';
+    }
+}
 const songData = {
     title: "Same Blue",
     jp: `気持ちの整理がつかないままの朝に 散らかったそれを鞄に詰め込んだ
@@ -88,8 +135,6 @@ const songData = {
         We’re spending this season named under you as declared`
 }
 
-let currentLang = 'jp';
-
 function changeLanguage() {
     const content = document.getElementById('lyric-content');
     const btn = document.getElementById('lang-btn');
@@ -99,11 +144,11 @@ function changeLanguage() {
     setTimeout(() => {
         if (currentLang === 'jp') {
             content.innerText = songData.en;
-            btn.innerText = "Switch to Japanese";
+            btn.innerText = "Switch to English";
             currentLang = 'en';
         } else {
             content.innerText = songData.jp;
-            btn.innerText = "英語に切り替える";
+            btn.innerText = "日本語に切り替える";
             currentLang = 'jp';
     }
     content.classList.remove('fade-out');},400); 
