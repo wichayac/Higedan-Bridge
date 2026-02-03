@@ -1,8 +1,8 @@
 :root {
-    --bg-color: black;
+    --bg-color: #121212;
     --accent-color: #ffcc00;
     --accent--color--dark: #886d00;
-    --text-color: white;
+    --text-color: #e0e0e0;
     --header-bg: #1f1f1f;
 }
 
@@ -12,6 +12,10 @@ body {
     padding: 0;
     background-color: var(--bg-color);
     color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
 }
 
 header {
@@ -60,6 +64,7 @@ main {
     padding: 2px;
     margin-top: 150px;
     background-color: var(--bg-color);
+    flex: 1; /* push the footer */
 }
 
 footer {
