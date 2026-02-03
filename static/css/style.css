@@ -1,24 +1,35 @@
+:root {
+    --bg-color: black;
+    --accent-color: #ffcc00;
+    --accent--color--dark: #886d00;
+    --text-color: white;
+    --header-bg: #1f1f1f;
+}
+
 body {
-    font-family:noto-sans-cjk-jp, sans-serif, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic Pro", "游ゴシック体", YuGothic, "Yu Gothic Medium", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Arial", sans-serif;
+    font-family: noto-sans-cjk-jp, sans-serif, "Hiragino Kaku Gothic Pro", "Meiryo", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 header {
     text-align: center;
-    padding: 10px 0;
-    background:pink;
-    color: #ffffff;
+    padding: 15px 0;
+    background: var(--header-bg);
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color); /* header's underline */
     position: fixed;
     width: 100%;
-    top: 0;
-    overflow: hidden;
+    top: 0; 
+    overflow: hidden; 
+    z-index: 1000 /* keep header on top */
 }
 
 h2, p {
     text-align: center;
-    font-family: noto-sans-cjk-jp, sans-serif, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic Pro", "游ゴシック体", YuGothic, "Yu Gothic Medium", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Arial", sans-serif;
+    font-family: noto-sans-cjk-jp, sans-serif, "Hiragino Kaku Gothic Pro", "Meiryo", sans-serif;
 }
 
 .left-side {
@@ -41,22 +52,22 @@ nav a {
 }
 
 a:hover {
-    color: black;
-    transition: 0.45s;
+    color: var(--accent-color);
+    transition: 0.3s;
 }
 
 main {
     padding: 2px;
     margin-top: 150px;
+    background-color: var(--bg-color);
 }
 
 footer {
     text-align: center;
-    padding: 10px 0;
-    background:pink;
-    color: #ffffff;
+    padding: 20px 0;
+    background: var(--header-bg);
+    color: var(--text-color);
     width: 100%;
-    bottom: 0;
 }
 
 ::selection {
@@ -64,29 +75,31 @@ footer {
   }
 
 .language-button {
-    padding: 5px 5px;
-    background-color: rgb(255, 121, 143);
-    color: white;
+    padding: 8px 15px;
+    background-color: var(--accent-color);
+    color: black;
     border: none;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .language-button:hover {
-    background-color: black;
-    transition: 0.45s
+    background-color: var(--accent--color--dark);
+    color: white;
+    transition: 0.3s;
 }
 
 div {
     text-align: center;
     font-size: 16px;
-    font-family:noto-sans-cjk-jp, sans-serif, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic Pro", "游ゴシック体", YuGothic, "Yu Gothic Medium", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Arial", sans-serif;
+    font-family: noto-sans-cjk-jp, sans-serif, "Hiragino Kaku Gothic Pro", "Meiryo", sans-serif;
     letter-spacing: 0.04em;
 }
 
 .lyrics-text {
     white-space: pre-line;
     text-align: center;
-    line-height: 1.8;
+    line-height: 2;
     padding: 20px;
     transition: opacity 0.4s ease-in-out;
     opacity: 1;
