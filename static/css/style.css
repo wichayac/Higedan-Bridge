@@ -76,7 +76,7 @@ footer {
 }
 
 ::selection {
-    background: rgb(103, 255, 204);
+    background: var(--accent-color);
   }
 
 .language-button {
@@ -111,4 +111,11 @@ div {
 }
 .fade-out {
     opacity: 0;
+}
+
+body.theme-same-blue {
+    --bg-color: #001226;
+    --header-bg: #000a14;
+    --accent-color: #87CEEB;
+    --text-color: #f0f8ff;
 }

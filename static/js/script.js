@@ -134,4 +134,23 @@ window.onload = function() {
         currentLang = 'jp';
         toggleLanguage();
     }
+
+    const lyricElement = document.getElementById('lyric-content');
+    if (lyricElement) {
+        const songName = document.title.trim().toLowerCase().replace(/\s+/g, '-'); /* Such as Same Blue to same-blue */
+        applyTheme(songName);
+    } else {
+        applyTheme(); // Default for Home
+    }
+}
+
+function applyTheme(themeName) {
+    const classes = document.body.classList;
+    const themeClasses = Array.from(classes).filter(c => c.startsWith('theme-'));
+
+    themeClasses.forEach(c => document.body.classList.remove(c));
+
+    if (themeName) {
+        document.body.classList.add(`theme-${themeName}`);
+    }
 }
