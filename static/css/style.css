@@ -1,7 +1,7 @@
 :root {
     --bg-color: #121212;
     --accent-color: #ffcc00;
-    --accent--color--dark: #886d00;
+    --accent--hover: #886d00;
     --text-color: #e0e0e0;
     --header-bg: #1f1f1f;
 }
@@ -89,7 +89,7 @@ footer {
 }
 
 .language-button:hover {
-    background-color: var(--accent--color--dark);
+    background-color: var(--accent--hover);
     color: white;
     transition: 0.3s;
 }
@@ -118,4 +118,5 @@ body.theme-same-blue {
     --header-bg: #000a14;
     --accent-color: #87CEEB;
     --text-color: #f0f8ff;
+    --accent--hover: #4e88a1;
 }
