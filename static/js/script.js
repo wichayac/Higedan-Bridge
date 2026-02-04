@@ -247,14 +247,22 @@ function toggleLanguage() {
     document.getElementById('nav-official').innerText = homeData[targetLang].official;
     document.getElementById('lang-btn').innerText = homeData[targetLang].btn;
 
+    //check for home page elements 
     const welcomeMsg = document.getElementById('welcome-msg');
     const welcomeSub = document.getElementById('welcome-sub');
-    const lyricContent = document.getElementById('lyric-content');
-    const currentSong = songData.find(song => song.title === document.getElementById('song-title').innerText)
-    //update only if they are on the page
     if (welcomeMsg) welcomeMsg.innerText = homeData[targetLang].welcome;
     if (welcomeSub) welcomeSub.innerText = homeData[targetLang].sub;
-    if (lyricContent && currentSong) lyricContent.innerText = currentSong[targetLang];
+
+    //check for lyrics page elements
+    const lyricContent = document.getElementById('lyric-content');
+    const songTitle = document.getElementById('song-title');
+
+    if (lyricContent && songTitle) {
+        const currentSong = songData.find(song => song.title === songTitle.innerText);
+        if (currentSong) {
+            lyricContent.innerText = currentSong[targetLang];
+        }
+    }
 
     currentLang = targetLang;
     localStorage.setItem('preferredLang', currentLang);
