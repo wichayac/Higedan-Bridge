@@ -1,9 +1,9 @@
 :root {
-    --bg-color: #121212;
+    --bg-color: #e0e0e0;
     --accent-color: #ffcc00;
     --accent--hover: #886d00;
-    --text-color: #e0e0e0;
-    --header-bg: #1f1f1f;
+    --text-color: #000000;
+    --header-bg: #000000;
 }
 
 body {
@@ -119,4 +119,12 @@ body.theme-same-blue {
     --accent-color: #87CEEB;
     --text-color: #f0f8ff;
     --accent--hover: #4e88a1;
+}
+
+body.theme-pretender {
+    --bg-color: #1a0505;
+    --header-bg: #0d0000;
+    --accent-color: #ff4d4d;
+    --accent--hover: #b30000;
+    --text-color: #ffe6e6;
 }
