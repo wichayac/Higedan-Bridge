@@ -259,17 +259,22 @@ function toggleLanguage() {
 }
 
 window.onload = function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const songID = urlParams.get('song');
+
+    if (songID) {
+        const currentSong = songData.find(song => song.title.toLowerCase().replace(/\s+/g,'-') === songID);
+    
+        if (currentSong) {
+            document.getElementById('song-title').innerText = currentSong.title;
+            document.getElementById('lyric-content').innerText = currentSong[currentLang];
+            applyTheme(songID);
+        }
+    }
+
     if (currentLang === 'en') {
         currentLang = 'jp';
         toggleLanguage();
-    }
-
-    const lyricElement = document.getElementById('lyric-content');
-    if (lyricElement) {
-        const songName = document.title.trim().toLowerCase().replace(/\s+/g, '-'); /* Such as Same Blue to same-blue */
-        applyTheme(songName);
-    } else {
-        applyTheme(); // Default for Home
     }
 }
 
