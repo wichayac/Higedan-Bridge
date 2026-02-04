@@ -248,10 +248,11 @@ function toggleLanguage() {
     const welcomeMsg = document.getElementById('welcome-msg');
     const welcomeSub = document.getElementById('welcome-sub');
     const lyricContent = document.getElementById('lyric-content');
+    const currentSong = songData.find(song => song.title === document.getElementById('song-title').innerText)
     //update only if they are on the page
     if (welcomeMsg) welcomeMsg.innerText = homeData[targetLang].welcome;
     if (welcomeSub) welcomeSub.innerText = homeData[targetLang].sub;
-    if (lyricContent) lyricContent.innerText = songData[targetLang];
+    if (lyricContent && currentSong) lyricContent.innerText = currentSong[targetLang];
 
     currentLang = targetLang;
     localStorage.setItem('preferredLang', currentLang);
