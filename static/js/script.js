@@ -22,6 +22,7 @@ const homeData = {
 const songData = [
     {
         title: "Same Blue",
+        spotifyID: "3tRgmNTaFYgtbt7XCy6Les",
         jp: `気持ちの整理がつかないままの朝に 散らかったそれを鞄に詰め込んだ
         やっぱり僕は あなたの前の僕は 渡したい言葉なんて渡せないまま
         1人の夜に中身を広げようとして 胸の奥がひりついてたまらなかった
@@ -112,6 +113,7 @@ const songData = [
     },
     {
         title: "Pretender",
+        spotifyID: "1OBAWkIciXl8rmbKtrp9ZG",
         jp: `君とのラブストーリー
         それは予想通り
         いざ始まればひとり芝居だ
@@ -269,6 +271,11 @@ window.onload = function() {
             document.getElementById('song-title').innerText = currentSong.title;
             document.getElementById('lyric-content').innerText = currentSong[currentLang];
             applyTheme(songID);
+
+            const spotifyPlayer = document.getElementById('spotify-player');
+            if (spotifyPlayer && currentSong.spotifyID) {
+                spotifyPlayer.src = `https://open.spotify.com/embed/track/${currentSong.spotifyID}`;
+            } 
         }
     }
 
