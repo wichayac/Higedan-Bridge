@@ -25,217 +25,201 @@ const songData = [
         spotifyID: "3tRgmNTaFYgtbt7XCy6Les",
         jp: `気持ちの整理がつかないままの朝に 散らかったそれを鞄に詰め込んだ
         やっぱり僕は あなたの前の僕は 渡したい言葉なんて渡せないまま
+
         1人の夜に中身を広げようとして 胸の奥がひりついてたまらなかった
         好きな想いが あなたを好きという想いが あまりにも嵩張ってたから
+
         近くて遠い日々に眩暈がした 落ち込んで浮かれての寒暖差に
         染められて増えていた この重みを 絶対に離したくないと
         胸は痛いくせに そう叫んでしまっていた
+        ♪
         春の中 あなたを見た 見惚れていた 夏模様の中で
         移ろう街と逆に 青のまま募る心
         秋の空 雪が混じった その全てがとても似合っていた
         よそ見する暇もない忙しい世界を 走るように恋をしている
         あなたという季節の中で
+        ♪
         足りないものを少しでも減らそうとして
         力んで余計にいくつも増えたりして
         やっぱり僕じゃあなたを好きな僕じゃ 釣り合いたがる資格もないよなあ
+
         あれだけ用意した伝えたかったこと 色んな自分に邪魔をされた
         鞄の中で揺れ 拗れてさらに膨れ
         傷跡にさえなれずに 隠し持った想いたちが
         溢れることを選んだ日は ちゃんと届けたい
         あなたの心の中へ
+        ♪
         春の中 あなたを見た 見惚れていた 夏模様の中で
         移ろう街と逆に 青のまま募る心
         秋の空 雪が混じった その全てがとても似合っていた
         よそ見する暇もない忙しい世界を 走るように恋をしている
+
         青のまま濁って澄んで 大きな未熟さを背負って
         明日も息を切らしたい あなたの居る目まぐるしい世界で
         あなたという季節の中で`,
-        en: `This morning when my thoughts
-        And my emotions were still a whole mess
-        I have stuffed everything all into my bag
-        No more, no less
-        Still, I just cannot be myself when I am in front of you
-        I wish I could but I cannot give you the words that I want to
+        en: `In the morning when I couldn't organize my feelings, I stuffed the mess into my bag.
+        After all, I, the person I was before you, can't even give me the words I want to give you.
 
-        During this night alone, I spread everything out as I unpack
-        But this painful feeling in my heart just kept stabbing me back
-        This love I feel inside, all of this love that I feel inside for you
-        It is too heavy, but this is all I can do
+        As I tried to unpack my contents one night alone, I felt an unbearable tingle deep inside my chest.
+        Because my feelings of liking you, my feelings of loving you were too overwhelming.
 
-        Our days seem so close yet so far, making me all dizzy
-        Temperature difference had my mind in a tizzy
-        My heart’s filled with growing feelings for you inside of me
-        I wish I could but I just can’t lеt them go
-        As much as I am in pain, I still want to scream out to you
+        I was dizzy at the days that were near and far away, feeling depressed and excited at the difference in temperature.
+        I never want to let go of this weight that has been dyed and increased.
+        Even though my chest hurt, I cried out
+        ♪
+        I saw you in the spring and fell in love with you in the summer pattern
+        Contrary to the ever-changing city, my heart continues to gather while still being blue.
+        The autumn sky mixed with snow, everything looked so good together.
+        In the season of you
+        ♪
+        Trying to reduce what is missing as much as possible
+        I strained myself and added more and more.
+        After all, since I love you, I don't have the right to even want to match you.
 
-        During this springtime, I am watching you shinе
-        I am mesmerized, with this summer pattern and design
-        As this world that we live is changing
-        My heart stayed blue, this feeling only grew
-        In this autumn sky, with this snow combined
-        Every little thing around you fits you perfectly fine
-        I am totally deep in love like
-        As if I’m running around this busy life, no break to be free
-        We’re spending this season named under you as we see
+        I had prepared so many things that I wanted to say, but I was hindered by many things about myself.
+        Shaking inside my bag, it swells even more
+        The feelings that I hid without even becoming scars
+        On the day I choose to overflow, I want to deliver it properly
+        into your heart
+        ♪
+        I saw you in the middle of spring and fell in love with you in the midst of summer patterns
+        Contrary to the ever-changing city, my heart continues to gather while still being blue.
+        The autumn sky mixed with snow, everything looked so good together.
+        In a busy world where I don't have time to look away, I'm running in love
 
-        I’m trying my best to reduce the number of things I lack
-        For some reason, they increase the more I’m trying to do that
-        It seems that I, who loves you from the bottom of my heart
-        Will never have the right to match your part
-        Words that I prepared to say
-        All the things that are in the way
-        They are being blocked by different me always
-        Everything shaking in this bag
-        They will just swell and they sway
-        It can’t even be left as a scar
-        Feelings I’m trying to hide so far
-        On the day my heart overflows
-        Just wanna let you know
-        Straight to your heart
-        Where my love for you belong
-
-        During this springtime, I am watching you shine
-        I am mesmerized, with this summer pattern and design
-        As this world that we live is changing
-        My heart stayed blue, this feeling only grew
-        In this autumn sky, with this snow combined
-        Every little thing around you fits you perfectly fine
-        I am totally deep in love like
-        As if I’m running around this busy life, with no break to arise
-        Tainted but still blue, yet clear as can be
-        Carry immaturity, heavily
-
-
-        Tomorrow, I’ll still try to gasp for air
-        In this spinning world that you live in without a single care
-        We’re spending this season named under you as declared`
+        Still blue, cloudy and clear, carrying a huge immaturity
+        I want to be out of breath again tomorrow in this fast-paced world where you live.
+        In the season of you`
 
     },
     {
         title: "Pretender",
         spotifyID: "1OBAWkIciXl8rmbKtrp9ZG",
-        jp: `君とのラブストーリー
-        それは予想通り
+        jp: `君とのラブストーリー それは予想通り
         いざ始まればひとり芝居だ
-        ずっとそばにいたって
-        結局ただの観客だ
-        感情のないアイムソーリー
-        それはいつも通り
+        ずっとそばにいたって 結局ただの観客だ
+
+        感情のないアイムソーリー それはいつも通り
         慣れてしまえば悪くはないけど
-        君とのロマンスは人生柄
-        続きはしないことを知った
-        もっと違う設定で
-        もっと違う関係で
-        出会える世界線
-        選べたらよかった
-        もっと違う性格で
-        もっと違う価値観で
+        君とのロマンスは人生柄 続きはしないことを知った
+
+        もっと違う設定で もっと違う関係で
+        出会える世界線 選べたらよかった
+        もっと違う性格で もっと違う価値観で
         愛を伝えられたらいいな
         そう願っても無駄だから
+
         グッバイ
         君の運命のヒトは僕じゃない
-        辛いけど否めない
-        でも離れ難いのさ
-        その髪に触れただけで
-        痛いや いやでも
+        辛いけど否めない でも離れ難いのさ
+        その髪に触れただけで 痛いや いやでも
         甘いな いやいや
+
         グッバイ
         それじゃ僕にとって君は何？
-        答えは分からない
-        分かりたくもないのさ
+        答えは分からない 分かりたくもないのさ
         たったひとつ確かなことがあるとするのならば
-        君は綺麗だ
-        誰かが偉そうに
-        語る恋愛の論理
+        「君は綺麗だ」
+        ♪
+        誰かが偉そうに 語る恋愛の論理
         何ひとつとしてピンとこなくて
-        飛行機の窓から見下ろした
-        知らない街の夜景みたいだ
-        もっと違う設定で
-        もっと違う関係で
-        出会える世界線
-        選べたらよかった
-        いたって純な心で
-        叶った恋を抱きしめて
-        好きだとか無責任に言えたらいいな
+        飛行機の窓から見下ろした 知らない街の夜景みたいだ
+
+        もっと違う設定で もっと違う関係で
+        出会える世界線 選べたらよかった
+        いたって純な心で 叶った恋を抱きしめて
+        「好きだ」とか無責任に言えたらいいな
         そう願っても虚しいのさ
+
         グッバイ
         繋いだ手の向こうにエンドライン
-        引き伸ばすたびに
-        疼きだす未来には
-        君はいない
-        その事実に Cry
+        引き伸ばすたびに 疼きだす未来には
+        君はいない その事実に Cry
         そりゃ苦しいよな
+        ♪
         グッバイ
         君の運命のヒトは僕じゃない
-        辛いけど否めない
-        でも離れ難いのさ
-        その髪に触れただけで
-        痛いや いやでも
+        辛いけど否めない でも離れ難いのさ
+        その髪に触れただけで 痛いや いやでも
         甘いな いやいや
+
         グッバイ
         それじゃ僕にとって君は何？
-        答えは分からない
-        分かりたくもないのさ
+        答えは分からない 分かりたくもないのさ
         たったひとつ確かなことがあるとするのならば
-        君は綺麗だ
+        「君は綺麗だ」
+
         それもこれもロマンスの定めなら
         悪くないよな
         永遠も約束もないけれど
-        とても綺麗だ`,
-        en: `Our love story, just as expected
-        When it starts, it's just a one-man show
-        Even though I was always by your side, I'm just in the audience
-        An apology without emotion, just like always
-        It's not so bad once you get used to it
+        「とても綺麗だ」`,
+        en: `Love story with you, just as expected
+        Once it starts, it's just a one-man show
+        Even though I was always by your side. In the end, I was just an audience
+        
+        "I'm sorry" without any feeling, that's just like always
+        It's not that bad once you get used to it
+        A romance with you, given my way of life
+        I knew it wouldn’t continue
 
-        My romance with you is how life goes
-        I knew it would never last
-
-        I wish I had chosen a different setting, a different relation
-        A different world-line where I could meet you
-        I wish I had been able to show my love in a different personality
-        With different values
+        In a different setting,
+        in a different kind of relationship,
+        in a worldline where we could meet
+        I wish I could have chosen that
+        With a different personality,
+        with different values,
+        I wish I could have told you I loved you.
         But I know it's pointless
 
         Goodbye
-        I'm not your soulmate
-        It hurts, but I can't deny it, but it's still hard to let go
-        It hurts just to touch your hair, but
-        It feels so sweet, no no
+        I'm not the one you're meant to be with
+        It hurts, but I can't deny it, and yet I can't let go
+        Just touching your hair, it hurts
+        No... it's sweet though, no no
 
         Goodbye
         So, what are you to me?
-        I don't know the answer, I don't want to know the answer
+        I don't know the answer, I don't even want to know 
         If there's just one thing I know that's true, it's that
         "You're beautiful"
-
+        ♪
         Some self-important person lecturing about love
         But nothing makes any sense
         It's like seeing the nightscape of an unknown city from an airplane window
 
-        I wish I had chosen a different setting, a different relation
-        A different world-line where I could meet you
-        I wish I could have had that love come true, and told you "I love you" without any responsibility
-        With a pure heart
+        In a different setting,
+        in a different kind of relationship,
+        in a worldline where we could meet
+        I wish I could have chosen that
+        If I had an utterly pure heart,
+        if I were holding a love that actually came true,
+        then maybe I could say something like “I love you” freely.
         But it's an empty wish
 
         Goodbye
         There's an end line beyond the hand I hold
-        Every time it's prolonged, at the end of a tingling future
+        Every time I try to make it last
+        the future starts to ache
         You're not there, and I cry at that truth
-        It's just too painful
-
+        That just hurts
+        ♪
         Goodbye
-        I'm not your soulmate
-        It hurts, but I can't deny it, but it's still hard to let go
-        It hurts just to touch your hair, but
-        It feels so sweet, no no
+        I'm not the one you're meant to be with
+        It hurts, but I can't deny it, and yet I can't let go
+        Just touching your hair, it hurts
+        No... it's sweet though, no no
 
         Goodbye
         So, what are you to me?
-        I don't know the answer, I don't want to know the answer
+        I don't know the answer, I don't even want to know 
         If there's just one thing I know that's true, it's that
-        "You're beautiful"`
+        "You're beautiful"
+        
+        If that's what romance is all about
+        It's not that bad, right?
+        There's no promise of eternity, but
+        It's very beautiful.
+        `
     }
 ];
 
