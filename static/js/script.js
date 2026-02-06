@@ -230,7 +230,11 @@ const songData = [
 function toggleLanguage() {
     const targetLang = (currentLang === 'jp') ? 'en' : 'jp';
     //exists on all pages
-
+    /* const heroText = document.getElementById('hero-text'); fix because lyrics.html doesn't have hero-text so it can't find*/
+    const heroText = document.getElementById('hero-text');
+    if (heroText) {
+        heroText.innerText = homeData[targetLang].title;
+    } 
     document.getElementById('hero-text').innerText = homeData[targetLang].title;
     document.getElementById('website-title').innerText = homeData[targetLang].title;
     document.getElementById('nav-home').innerText = homeData[targetLang].home;
