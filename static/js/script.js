@@ -110,10 +110,12 @@ const songData = [
         そう願っても無駄だから
 
         グッバイ
-        君の運命のヒトは僕じゃない
-        辛いけど否めない でも離れ難いのさ
-        その髪に触れただけで 痛いや いやでも
-        甘いな いやいや
+        <ruby>君<rt>きみ</rt></ruby>の<ruby>運命<rt>うんめい</rt></ruby>の<ruby>ヒト<rt>ひと</rt></ruby>は<ruby>僕<rt>ぼく</rt></ruby>じゃない
+        <ruby>辛<rt>つら</rt></ruby>いけど<ruby>否<rt>いな</rt></ruby>めない
+        でも<ruby>離<rt>はな</rt></ruby>れ<ruby>難<rt>がた</rt></ruby>いのさ
+        その<ruby>髪<rt>かみ</rt></ruby>に<ruby>触<rt>ふ</rt></ruby>れただけで
+        <ruby>痛<rt>いた</rt></ruby>いや いやでも
+        <ruby>甘<rt>あま</rt></ruby>いな いやいや
 
         グッバイ
         それじゃ僕にとって君は何？
@@ -168,7 +170,7 @@ const songData = [
         I wish I could have chosen that
         With a different personality,
         with different values,
-        I wish I could have told you I loved you.
+        I wish I could have conveyed my love to you.
         But I know it's pointless
 
         Goodbye
@@ -244,7 +246,7 @@ function toggleLanguage() {
     if (lyricContent && songTitle) {
         const currentSong = songData.find(song => song.title === songTitle.innerText);
         if (currentSong) {
-            lyricContent.innerText = currentSong[targetLang];
+            lyricContent.innerHTML = currentSong[targetLang];
         }
     }
 
@@ -261,7 +263,7 @@ window.onload = function() {
     
         if (currentSong) {
             document.getElementById('song-title').innerText = currentSong.title;
-            document.getElementById('lyric-content').innerText = currentSong[currentLang];
+            document.getElementById('lyric-content').innerHTML = currentSong[currentLang];
             applyTheme(songID);
 
             const spotifyPlayer = document.getElementById('spotify-player');
@@ -285,5 +287,16 @@ function applyTheme(themeName) {
 
     if (themeName) {
         document.body.classList.add(`theme-${themeName}`);
+    }
+}
+
+function toggleFurigana() {
+    document.body.classList.toggle('show-furigana');
+
+    const furiganaBtn = document.getElementById('furigana-btn');
+    if (document.body.classList.contains('show-furigana')) {
+        furiganaBtn.innerText = "Furigana: ON"
+    } else {
+        furiganaBtn.innerText = "Furigana: OFF" 
     }
 }

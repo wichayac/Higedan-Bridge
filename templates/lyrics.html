@@ -18,11 +18,16 @@
         </nav>
     </header>
 <main>
-    <h2 id="song-title">Same Blue</h2>
+    <h2 id="song-title">Song Title</h2>
+
     <div class="music-player">
         <iframe id="spotify-player" src="https://open.spotify.com/embed/track/2cupzYHOSLmMqDHRVQfI9j?utm_source=generator"
         width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; 
         fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <div class="lyrics-controls">
+        <button id="furigana-btn" onclick="toggleFurigana()">Furigana: OFF</button>
     </div>
 
     <div id="lyric-content" class="lyrics-text">

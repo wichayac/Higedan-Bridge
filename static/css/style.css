@@ -128,3 +128,13 @@ body.theme-pretender {
     --accent--hover: #b30000;
     --text-color: #ffe6e6;
 }
+
+rt {
+    display: none;
+}
+
+body.show-furigana rt {
+    display: block;
+    font-size: 0.6em;
+    line-height: 1;
+}
