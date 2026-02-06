@@ -23,40 +23,40 @@ const songData = [
     {
         title: "Same Blue",
         spotifyID: "3tRgmNTaFYgtbt7XCy6Les",
-        jp: `気持ちの整理がつかないままの朝に 散らかったそれを鞄に詰め込んだ
-        やっぱり僕は あなたの前の僕は 渡したい言葉なんて渡せないまま
+        jp: `<ruby>気持<rt>きも</rt></ruby>ちの<ruby>整理<rt>せいり</rt></ruby>がつかないままの<ruby>朝<rt>あさ</rt></ruby>に <ruby>散<rt>ち</rt></ruby>らかったそれを<ruby>鞄<rt>かばん</rt></ruby>に<ruby>詰<rt>つ</rt></ruby>め<ruby>込<rt>こ</rt></ruby>んだ
+        やっぱり<ruby>僕<rt>ぼく</rt></ruby>は あなたの<ruby>前<rt>まえ</rt></ruby>の<ruby>僕<rt>ぼく</rt></ruby>は <ruby>渡<rt>わた</rt></ruby>したい<ruby>言葉<rt>ことば</rt></ruby>なんて<ruby>渡<rt>わた</rt></ruby>せないまま
 
-        1人の夜に中身を広げようとして 胸の奥がひりついてたまらなかった
-        好きな想いが あなたを好きという想いが あまりにも嵩張ってたから
+        1<ruby>人<rt>ひとり</rt></ruby>の<ruby>夜<rt>よる</rt></ruby>に<ruby>中身<rt>なかみ</rt></ruby>を<ruby>広<rt>ひろ</rt></ruby>げようとして <ruby>胸<rt>むね</rt></ruby>の<ruby>奥<rt>おく</rt></ruby>がひりついてたまらなかった
+        <ruby>好<rt>す</rt></ruby>きな<ruby>想<rt>おも</rt></ruby>いが あなたを<ruby>好<rt>す</rt></ruby>きという<ruby>想<rt>おも</rt></ruby>いが あまりにも<ruby>嵩張<rt>かさば</rt></ruby>ってたから
 
-        近くて遠い日々に眩暈がした 落ち込んで浮かれての寒暖差に
-        染められて増えていた この重みを 絶対に離したくないと
-        胸は痛いくせに そう叫んでしまっていた
+        <ruby>近<rt>ちか</rt></ruby>くて<ruby>遠<rt>とお</rt></ruby>い<ruby>日々<rt>ひび</rt></ruby>に<ruby>眩暈<rt>めまい</rt></ruby>がした <ruby>落<rt>お</rt></ruby>ち<ruby>込<rt>こ</rt></ruby>んで<ruby>浮<rt>う</rt></ruby>かれての<ruby>寒暖差<rt>かんだんさ</rt></ruby>に
+        <ruby>染<rt>そ</rt></ruby>められて<ruby>増<rt>ふ</rt></ruby>えていた この<ruby>重<rt>おも</rt></ruby>みを <ruby>絶対<rt>ぜったい</rt></ruby>に<ruby>離<rt>はな</rt></ruby>したくないと
+        <ruby>胸<rt>むね</rt></ruby>は<ruby>痛<rt>いた</rt></ruby>いくせに そう<ruby>叫<rt>さけ</rt></ruby>んでしまっていた
         ♪
-        春の中 あなたを見た 見惚れていた 夏模様の中で
-        移ろう街と逆に 青のまま募る心
-        秋の空 雪が混じった その全てがとても似合っていた
-        よそ見する暇もない忙しい世界を 走るように恋をしている
-        あなたという季節の中で
+        <ruby>春<rt>はる</rt></ruby>の<ruby>中<rt>なか</rt></ruby> あなたを<ruby>見<rt>み</rt></ruby>た <ruby>見惚<rt>みと</rt></ruby>れていた <ruby>夏模様<rt>なつもよう</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で
+        <ruby>移<rt>うつ</rt></ruby>ろう<ruby>街<rt>まち</rt></ruby>と<ruby>逆<rt>ぎゃく</rt></ruby>に <ruby>青<rt>あお</rt></ruby>のまま<ruby>募<rt>つの</rt></ruby>る<ruby>心<rt>こころ</rt></ruby>
+        <ruby>秋<rt>あき</rt></ruby>の<ruby>空<rt>そら</rt></ruby> <ruby>雪<rt>ゆき</rt></ruby>が<ruby>混<rt>ま</rt></ruby>じった その<ruby>全<rt>すべ</rt></ruby>てがとても<ruby>似合<rt>にあ</rt></ruby>っていた
+        よそ<ruby>見<rt>み</rt></ruby>する<ruby>暇<rt>ひま</rt></ruby>もない<ruby>忙<rt>せわ</rt></ruby>しい<ruby>世界<rt>せかい</rt></ruby>を <ruby>走<rt>はし</rt></ruby>るように<ruby>恋<rt>こい</rt></ruby>をしている
+        あなたという<ruby>季節<rt>きせつ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で
         ♪
-        足りないものを少しでも減らそうとして
-        力んで余計にいくつも増えたりして
-        やっぱり僕じゃあなたを好きな僕じゃ 釣り合いたがる資格もないよなあ
+        <ruby>足<rt>た</rt></ruby>りないものを<ruby>少<rt>すこ</rt></ruby>しでも<ruby>減<rt>へ</rt></ruby>らそうとして
+        <ruby>力<rt>りき</rt></ruby>んで<ruby>余計<rt>よけい</rt></ruby>にいくつも<ruby>増<rt>ふ</rt></ruby>えたりして
+        やっぱり<ruby>僕<rt>ぼく</rt></ruby>じゃあなたを<ruby>好<rt>す</rt></ruby>きな<ruby>僕<rt>ぼく</rt></ruby>じゃ <ruby>釣<rt>つ</rt></ruby>り<ruby>合<rt>あ</rt></ruby>いたがる<ruby>資格<rt>しかく</rt></ruby>もないよなあ
 
-        あれだけ用意した伝えたかったこと 色んな自分に邪魔をされた
-        鞄の中で揺れ 拗れてさらに膨れ
-        傷跡にさえなれずに 隠し持った想いたちが
-        溢れることを選んだ日は ちゃんと届けたい
-        あなたの心の中へ
+        あれだけ<ruby>用意<rt>ようい</rt></ruby>した<ruby>伝<rt>つた</rt></ruby>えたかったこと <ruby>色<rt>いろ</rt></ruby>んな<ruby>自分<rt>じぶん</rt></ruby>に<ruby>邪魔<rt>じゃま</rt></ruby>をされた
+        <ruby>鞄<rt>かばん</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>揺<rt>ゆ</rt></ruby>れ <ruby>拗<rt>こじ</rt></ruby>れてさらに<ruby>膨<rt>ふく</rt></ruby>れ
+        <ruby>傷跡<rt>きずあと</rt></ruby>にさえなれずに <ruby>隠<rt>かく</rt></ruby>し<ruby>持<rt>も</rt></ruby>った<ruby>想<rt>おも</rt></ruby>いたちが
+        <ruby>溢<rt>あふ</rt></ruby>れることを<ruby>選<rt>えら</rt></ruby>んだ<ruby>日<rt>ひ</rt></ruby>は ちゃんと<ruby>届<rt>とど</rt></ruby>けたい
+        あなたの<ruby>心<rt>こころ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>へ
         ♪
-        春の中 あなたを見た 見惚れていた 夏模様の中で
-        移ろう街と逆に 青のまま募る心
-        秋の空 雪が混じった その全てがとても似合っていた
-        よそ見する暇もない忙しい世界を 走るように恋をしている
+        <ruby>春<rt>はる</rt></ruby>の<ruby>中<rt>なか</rt></ruby> あなたを<ruby>見<rt>み</rt></ruby>た <ruby>見惚<rt>みと</rt></ruby>れていた <ruby>夏模様<rt>なつもよう</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で
+        <ruby>移<rt>うつ</rt></ruby>ろう<ruby>街<rt>まち</rt></ruby>と<ruby>逆<rt>ぎゃく</rt></ruby>に <ruby>青<rt>あお</rt></ruby>のまま<ruby>募<rt>つの</rt></ruby>る<ruby>心<rt>こころ</rt></ruby>
+        <ruby>秋<rt>あき</rt></ruby>の<ruby>空<rt>そら</rt></ruby> <ruby>雪<rt>ゆき</rt></ruby>が<ruby>混<rt>ま</rt></ruby>じった その<ruby>全<rt>すべ</rt></ruby>てがとても<ruby>似合<rt>にあ</rt></ruby>っていた
+        よそ<ruby>見<rt>み</rt></ruby>する<ruby>暇<rt>ひま</rt></ruby>もない<ruby>忙<rt>いそが</rt></ruby>しい<ruby>世界<rt>せかい</rt></ruby>を <ruby>走<rt>はし</rt></ruby>るように<ruby>恋<rt>こい</rt></ruby>をしている
 
-        青のまま濁って澄んで 大きな未熟さを背負って
-        明日も息を切らしたい あなたの居る目まぐるしい世界で
-        あなたという季節の中で`,
+        <ruby>青<rt>あお</rt></ruby>のまま<ruby>濁<rt>にご</rt></ruby>って<ruby>澄<rt>す</rt></ruby>んで <ruby>大<rt>おお</rt></ruby>きな<ruby>未熟<rt>みじゅく</rt></ruby>さを<ruby>背負<rt>しょ</rt></ruby>って
+        <ruby>明日<rt>あす</rt></ruby>も<ruby>息<rt>いき</rt></ruby>を<ruby>切<rt>き</rt></ruby>らしたい あなたの<ruby>居<rt>い</rt></ruby>る<ruby>目<rt>め</rt></ruby>まぐるしい<ruby>世界<rt>せかい</rt></ruby>で
+        あなたという<ruby>季節<rt>きせつ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で`,
         en: `In the morning when I couldn't organize my feelings, I stuffed the mess into my bag.
         After all, I, the person I was before you, can't even give me the words I want to give you.
 
@@ -95,22 +95,22 @@ const songData = [
     {
         title: "Pretender",
         spotifyID: "1OBAWkIciXl8rmbKtrp9ZG",
-        jp: `君とのラブストーリー それは予想通り
-        いざ始まればひとり芝居だ
-        ずっとそばにいたって 結局ただの観客だ
+        jp: `<ruby>君<rt>きみ</rt></ruby>とのラブストーリー それは<ruby>予想通<rt>よそうどお</rt></ruby>り
+        いざ<ruby>始<rt>はじ</rt></ruby>まればひとり<ruby>芝居<rt>しばい</rt></ruby>だ
+        ずっとそばにいたって <ruby>結局<rt>けっきょく</rt></ruby>ただの<ruby>観客<rt>かんきゃく</rt></ruby>だ
 
-        感情のないアイムソーリー それはいつも通り
-        慣れてしまえば悪くはないけど
-        君とのロマンスは人生柄 続きはしないことを知った
+        <ruby>感情<rt>かんじょう</rt></ruby>のないアイムソーリー それはいつも<ruby>通<rt>どお</rt></ruby>り
+        <ruby>慣<rt>な</rt></ruby>れてしまえば<ruby>悪<rt>わる</rt></ruby>くはないけど
+        <ruby>君<rt>きみ</rt></ruby>とのロマンスは<ruby>人生柄<rt>じんせいがら</rt></ruby> <ruby>続<rt>つづ</rt></ruby>きはしないことを<ruby>知<rt>し</rt></ruby>った
 
-        もっと違う設定で もっと違う関係で
-        出会える世界線 選べたらよかった
-        もっと違う性格で もっと違う価値観で
-        愛を伝えられたらいいな
-        そう願っても無駄だから
+        もっと<ruby>違<rt>ちが</rt></ruby>う<ruby>設定<rt>せってい</rt></ruby>で もっと<ruby>違<rt>ちが</rt></ruby>う<ruby>関係<rt>かんけい</rt></ruby>で
+        <ruby>出会<rt>であ</rt></ruby>える<ruby>世界線<rt>せかいせん</rt></ruby> <ruby>選<rt>えら</rt></ruby>べたらよかった
+        もっと<ruby>違<rt>ちが</rt></ruby>う<ruby>性格<rt>せいかく</rt></ruby>で もっと<ruby>違<rt>ちが</rt></ruby>う<ruby>価値観<rt>かちかん</rt></ruby>で
+        <ruby>愛<rt>あい</rt></ruby>を<ruby>伝<rt>つた</rt></ruby>えられたらいいな
+        そう<ruby>願<rt>ねが</rt></ruby>っても<ruby>無駄<rt>むだ</rt></ruby>だから
 
         グッバイ
-        <ruby>君<rt>きみ</rt></ruby>の<ruby>運命<rt>うんめい</rt></ruby>の<ruby>ヒト<rt>ひと</rt></ruby>は<ruby>僕<rt>ぼく</rt></ruby>じゃない
+        <ruby>君<rt>きみ</rt></ruby>の<ruby>運命<rt>うんめい</rt></ruby>のヒト</ruby>は<ruby>僕<rt>ぼく</rt></ruby>じゃない
         <ruby>辛<rt>つら</rt></ruby>いけど<ruby>否<rt>いな</rt></ruby>めない
         でも<ruby>離<rt>はな</rt></ruby>れ<ruby>難<rt>がた</rt></ruby>いのさ
         その<ruby>髪<rt>かみ</rt></ruby>に<ruby>触<rt>ふ</rt></ruby>れただけで
@@ -118,43 +118,43 @@ const songData = [
         <ruby>甘<rt>あま</rt></ruby>いな いやいや
 
         グッバイ
-        それじゃ僕にとって君は何？
-        答えは分からない 分かりたくもないのさ
-        たったひとつ確かなことがあるとするのならば
-        「君は綺麗だ」
+        それじゃ<ruby>僕<rt>ぼく</rt></ruby>にとって<ruby>君<rt>きみ</rt></ruby>は<ruby>何<rt>なに</rt></ruby>？
+        <ruby>答<rt>こた</rt></ruby>えは<ruby>分<rt>わ</rt></ruby>からない <ruby>分<rt>わ</rt></ruby>かりたくもないのさ
+        たったひとつ<ruby>確<rt>たし</rt></ruby>かなことがあるとするのならば
+        「<ruby>君<rt>きみ</rt></ruby>は<ruby>綺麗<rt>きれい</rt></ruby>だ」
         ♪
-        誰かが偉そうに 語る恋愛の論理
-        何ひとつとしてピンとこなくて
-        飛行機の窓から見下ろした 知らない街の夜景みたいだ
+        <ruby>誰<rt>だれ</rt></ruby>かが<ruby>偉<rt>えら</rt></ruby>そうに <ruby>語<rt>かた</rt></ruby>る<ruby>恋愛<rt>れんあい</rt></ruby>の<ruby>論理<rt>ろんり</rt></ruby>
+        <ruby>何<rt>なに</rt></ruby>ひとつとしてピンとこなくて
+        <ruby>飛行機<rt>ひこうき</rt></ruby>の<ruby>窓<rt>まど</rt></ruby>から<ruby>見下<rt>みお</rt></ruby>ろした <ruby>知<rt>し</rt></ruby>らない<ruby>街<rt>まち</rt></ruby>の<ruby>夜景<rt>やけい</rt></ruby>みたいだ
 
-        もっと違う設定で もっと違う関係で
-        出会える世界線 選べたらよかった
-        いたって純な心で 叶った恋を抱きしめて
-        「好きだ」とか無責任に言えたらいいな
-        そう願っても虚しいのさ
+        もっと<ruby>違<rt>ちが</rt></ruby>う<ruby>設定<rt>せってい</rt></ruby>で もっと<ruby>違<rt>ちが</rt></ruby>う<ruby>関係<rt>かんけい</rt></ruby>で
+        <ruby>出会<rt>であ</rt></ruby>える<ruby>世界線<rt>せかいせん</rt></ruby> <ruby>選<rt>えら</rt></ruby>べたらよかった
+        いたって<ruby>純<rt>じゅん</rt></ruby>な<ruby>心<rt>こころ</rt></ruby>で <ruby>叶<rt>かな</rt></ruby>った<ruby>恋<rt>こい</rt></ruby>を<ruby>抱<rt>だ</rt></ruby>きしめて
+        「<ruby>好<rt>す</rt></ruby>きだ」とか<ruby>無責任<rt>むせきにん</rt></ruby>に<ruby>言<rt>い</rt></ruby>えたらいいな
+        そう<ruby>願<rt>ねが</rt></ruby>っても<ruby>虚<rt>むな</rt></ruby>しいのさ
 
         グッバイ
-        繋いだ手の向こうにエンドライン
-        引き伸ばすたびに 疼きだす未来には
-        君はいない その事実に Cry
-        そりゃ苦しいよな
+        <ruby>繋<rt>つな</rt></ruby>いだ<ruby>手<rt>て</rt></ruby>の<ruby>向<rt>む</rt></ruby>こうにエンドライン
+        <ruby>引<rt>ひ</rt></ruby>き<ruby>伸<rt>の</rt></ruby>ばすたびに <ruby>疼<rt>うず</rt></ruby>きだす<ruby>未来<rt>みらい</rt></ruby>には
+        <ruby>君<rt>きみ</rt></ruby>はいない その<ruby>事実<rt>じじつ</rt></ruby>に Cry
+        そりゃ<ruby>苦<rt>くる</rt></ruby>しいよな
         ♪
         グッバイ
-        君の運命のヒトは僕じゃない
-        辛いけど否めない でも離れ難いのさ
-        その髪に触れただけで 痛いや いやでも
-        甘いな いやいや
+        <ruby>君<rt>きみ</rt></ruby>の<ruby>運命<rt>うんめい</rt></ruby>のヒト</ruby>は<ruby>僕<rt>ぼく</rt></ruby>じゃない
+        <ruby>辛<rt>つら</rt></ruby>いけど<ruby>否<rt>いな</rt></ruby>めない でも<ruby>離<rt>はな</rt></ruby>れ<ruby>難<rt>がた</rt></ruby>いのさ
+        その<ruby>髪<rt>かみ</rt></ruby>に<ruby>触<rt>ふ</rt></ruby>れただけで <ruby>痛<rt>いた</rt></ruby>いや いやでも
+        <ruby>甘<rt>あま</rt></ruby>いな いやいや
 
         グッバイ
-        それじゃ僕にとって君は何？
-        答えは分からない 分かりたくもないのさ
-        たったひとつ確かなことがあるとするのならば
-        「君は綺麗だ」
+        それじゃ<ruby>僕<rt>ぼく</rt></ruby>にとって<ruby>君<rt>きみ</rt></ruby>は<ruby>何<rt>なに</rt></ruby>？
+        <ruby>答<rt>こた</rt></ruby>えは<ruby>分<rt>わ</rt></ruby>からない <ruby>分<rt>わ</rt></ruby>かりたくもないのさ
+        たったひとつ<ruby>確<rt>たし</rt></ruby>かなことがあるとするのならば
+        「<ruby>君<rt>きみ</rt></ruby>は<ruby>綺麗<rt>きれい</rt></ruby>だ」
 
-        それもこれもロマンスの定めなら
-        悪くないよな
-        永遠も約束もないけれど
-        「とても綺麗だ」`,
+        それもこれもロマンスの<ruby>定<rt>さだ</rt></ruby>めなら
+        <ruby>悪<rt>わる</rt></ruby>くないよな
+        <ruby>永遠<rt>えいえん</rt></ruby>も<ruby>約束<rt>やくそく</rt></ruby>もないけれど
+        「とても<ruby>綺麗<rt>きれい</rt></ruby>だ」`,
         en: `Love story with you, just as expected
         Once it starts, it's just a one-man show
         Even though I was always by your side. In the end, I was just an audience
