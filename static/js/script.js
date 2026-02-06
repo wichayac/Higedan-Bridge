@@ -8,7 +8,7 @@ const homeData = {
         welcome: `こんにちは！ここは J-POPバンド Official髭男dism のファンサイトです。`,
         sub: `このサイトでは、髭男の歌詞と翻訳で、日本語を学べます！
                 どうぞごゆっくりお楽しみください！`,
-        btn: `Switch to English`
+        btn: `English`
     },
     en: {
         title: "Higedan Bridge",
@@ -17,7 +17,7 @@ const homeData = {
         welcome: `Hello! Welcome to this fan site dedicated to the J-POP band Official HIGE DANdism.`,
         sub: `Here, you can find song lyrics, translations and enjoy learning Japanese through their music.
             Feel free to explore!`,
-        btn: `日本語に切り替える`
+        btn: `日本語`
     }
 }
 
