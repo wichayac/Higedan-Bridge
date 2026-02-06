@@ -20,7 +20,7 @@ body {
 
 .hero-section {
     height: 100vh;
-    background-image: url('../img/higedanHero.jpg');
+    background-image: url('../../img/higedanHero.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
