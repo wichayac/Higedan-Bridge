@@ -137,14 +137,14 @@ footer {
     transition: 0.3s;
 } */
 
-nav a, .language-button {
+nav a, .language-toggle {
     color: var(--accent-color);
     font-weight: bold;
     font-size: 1rem;
     transition: 0.3s;
 }
 
-nav a:hover, .language-button:hover {
+nav a:hover, .language-toggle:hover {
     color:white;
     transition: 0.3s;
 }

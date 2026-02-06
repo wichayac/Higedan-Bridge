@@ -235,7 +235,6 @@ function toggleLanguage() {
     if (heroText) {
         heroText.innerText = homeData[targetLang].title;
     } 
-    document.getElementById('hero-text').innerText = homeData[targetLang].title;
     document.getElementById('website-title').innerText = homeData[targetLang].title;
     document.getElementById('nav-home').innerText = homeData[targetLang].home;
     document.getElementById('nav-official').innerText = homeData[targetLang].official;
