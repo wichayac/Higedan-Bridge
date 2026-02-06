@@ -254,6 +254,7 @@ function toggleLanguage() {
         const currentSong = songData.find(song => song.title === songTitle.innerText);
         if (currentSong) {
             lyricContent.innerHTML = currentSong[targetLang];
+            document.title = `${currentSong.title} | Higedan Bridge`;
         }
     }
 
