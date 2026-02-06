@@ -18,17 +18,55 @@ body {
 
 }
 
+.hero-section {
+    height: 100vh;
+    background-image: url('../img/higedanHero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.index-main {
+    margin-top: 0 !important;
+    background-color: #e0e0e0;
+    padding: 100px 20px;
+    position: relative;
+    z-index: 2;
+
+}
+
+.content-wrapper {
+    max-width: 850px;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 header {
-    text-align: center;
-    padding: 15px 0;
+    display: flex;
+    justify-content:space-between; /* Pushes title left and nav right */
+    align-items: center;
+    padding: 0px 10px;
     background: var(--header-bg);
     color: var(--accent-color);
-    border-bottom: 2px solid var(--accent-color); /* header's underline */
+    border-bottom: 2px solid var(--accent-color);
     position: fixed;
     width: 100%;
-    top: 0; 
-    overflow: hidden; 
-    z-index: 1000 /* keep header on top */
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
 }
 
 h2, p {
@@ -62,7 +100,6 @@ a:hover {
 
 main {
     padding: 2px;
-    margin-top: 150px;
     background-color: var(--bg-color);
     flex: 1; /* push the footer */
 }
@@ -145,4 +182,26 @@ body.show-furigana rt {
     display: ruby-text;
     font-size: 0.55em;
     color: white;
+}
+
+.song-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align to the left */
+    padding-left: 100px;    /* left-side text padding */
+    margin-top: 30px;
+}
+
+.song-link {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.song-link:hover {
+    color: var(--accent-color);
+    transform: translateX(10px); /* move effect on hover */
+    transition: 0.3s;
 }

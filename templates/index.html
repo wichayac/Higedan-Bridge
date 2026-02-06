@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head >
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/style.css">
     <title>ヒゲダンの架け橋</title>
+    <script src="../static/js/script.js"></script>
 </head>
+
 <body>
     <header>
-        <h1 id="website-title">ヒゲダンの架け橋</h1>
-        <nav>
-            <a href="index.html" id="nav-home">ホーム</a>
-            <a href="https://higedan.com/?lang=jp" id="nav-official">オフィシャルサイト</a>
-            <button onclick="toggleLanguage()" id="lang-btn" class="language-button">Switch to English</button>
-        </nav>
+    <h1 id="website-title">ヒゲダンの架け橋</h1>
+    <nav>
+        <a href="index.html" id="nav-home">ホーム</a>
+        <a href="https://higedan.com/?lang=jp" id="nav-official">オフィシャルサイト</a>
+        <button onclick="toggleLanguage()" id="lang-btn" class="language-button">Switch to English</button>
+    </nav>
     </header>
-    <main>
-        <h2 id="welcome-msg" class="left-side">
-            こんにちは! ここはJ-POPバンドOfficial髭男dismというのファンサイトです!
-        </h2>
-        <p id="welcome-sub" class="left-side">
-            歌詞の翻訳をここにポストします! よろしくお願いします!❤️
-        </p>
-        
-        <div class="song-list">
-            <a href="lyrics.html?song=same-blue" class="song-link">Same Blue</a>
-            <a href="lyrics.html?song=pretender" class="song-link">Pretender</a>
+        <div class="hero-section">
+            <h1 id="hero-text" class="hero-title">ヒゲダンの架け橋</h1>
         </div>
-
+    <main class="index-main">
+        <div class="content-wrapper">
+            <h2 id="welcome-msg">
+                こんにちは！
+                ここは J-POPバンド Official髭男dism のファンサイトです。</h2>
+        <p id="welcome-sub">このサイトでは、髭男の歌詞と翻訳で、日本語を学べます！
+                どうぞごゆっくりお楽しみください！</p>
+        
+            <div class="song-list">
+                <a href="lyrics.html?song=same-blue" class="song-link">Same Blue</a>
+                <a href="lyrics.html?song=pretender" class="song-link">Pretender</a>
+            </div>
+        </div>
     </main>
-<script src="../static/js/script.js"></script>
+
     <footer>
         <p> Web dedicated to Official髭男dism by Wichaya Chapinjai </p>
         <p class="disclaimer">This is a non-commercial fan project. Images and music are property of Official HIGE DANdism / Pony Canyon.</p>

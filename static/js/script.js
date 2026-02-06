@@ -5,16 +5,18 @@ const homeData = {
         title: `ヒゲダンの架け橋`,
         home: `ホーム`,
         official: "オフィシャルサイト",
-        welcome: `こんにちは! ここはJ-POPバンドOfficial髭男dismというのファンサイトです！`,
-        sub: `歌詞の翻訳をここにポストします！ よろしくお願いします！❤️`,
+        welcome: `こんにちは！ここは J-POPバンド Official髭男dism のファンサイトです。`,
+        sub: `このサイトでは、髭男の歌詞と翻訳で、日本語を学べます！
+                どうぞごゆっくりお楽しみください！`,
         btn: `Switch to English`
     },
     en: {
         title: "Higedan Bridge",
         home: "Home",
         official: "Official Site",
-        welcome: `Hello! This is a fan site for the J-POP band Official HIGE DANdism!`,
-        sub: `I will post lyrics and translations here!❤️`,
+        welcome: `Hello! Welcome to this fan site dedicated to the J-POP band Official HIGE DANdism.`,
+        sub: `Here, you can find song lyrics, translations and enjoy learning Japanese through their music.
+            Feel free to explore!`,
         btn: `日本語に切り替える`
     }
 }
@@ -228,6 +230,8 @@ const songData = [
 function toggleLanguage() {
     const targetLang = (currentLang === 'jp') ? 'en' : 'jp';
     //exists on all pages
+
+    document.getElementById('hero-text').innerText = homeData[targetLang].title;
     document.getElementById('website-title').innerText = homeData[targetLang].title;
     document.getElementById('nav-home').innerText = homeData[targetLang].home;
     document.getElementById('nav-official').innerText = homeData[targetLang].official;
