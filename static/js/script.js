@@ -102,3 +102,18 @@ function toggleFurigana() {
         furiganaBtn.innerText = "Furigana: OFF" 
     }
 }
+
+const container = document.getElementById('song-list');
+if (container) {
+    //loop for every song title in songData
+    songData.forEach((song) => {
+        const songLink = document.createElement('a'); //create <a>
+        const slug = song.title.replace(/\s+/g, '-').toLowerCase(); //such as Same Blue to same-blue
+        songLink.href = `lyrics.html?song=${slug}`;
+
+        songLink.innerText = song.title; //song title
+        songLink.classList.add('song-link');
+        container.appendChild(songLink);
+        
+    });
+} 
