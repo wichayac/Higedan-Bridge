@@ -44,11 +44,12 @@ function toggleLanguage() {
     const lyricContent = document.getElementById('lyric-content');
     const songTitle = document.getElementById('song-title');
 
+    // find currentSong by using URL to get songID instead of using songTitle.innerText
     if (lyricContent && songTitle) {
-        const currentSong = songData.find(song => song.title === songTitle.innerText);
+        const currentSong = songData.find(song => song.title.replace(/\s+/g, '-').toLowerCase());
         if (currentSong) {
             lyricContent.innerHTML = currentSong[targetLang];
-            document.title = `${currentSong.title} | Higedan Bridge`;
+            /* document.title = `${currentSong.title} | Higedan Bridge`; update title when toggle language */
         }
     }
 
@@ -61,9 +62,10 @@ window.onload = function () {
     const songID = urlParams.get('song');
 
     if (songID) {
-        const currentSong = songData.find(song => song.title.toLowerCase().replace(/\s+/g, '-') === songID);
+        const currentSong = songData.find(song => song.title.replace(/\s+/g, '-').toLowerCase() === songID);
 
         if (currentSong) {
+            document.title = `${currentSong.title} | Higedan Bridge`; //set Title immediately when finding a song
             document.getElementById('song-title').innerText = currentSong.title;
             document.getElementById('lyric-content').innerHTML = currentSong[currentLang];
             applyTheme(songID);
