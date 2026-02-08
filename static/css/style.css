@@ -46,13 +46,21 @@ body {
 }
 
 @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 header {
     display: flex;
-    justify-content: space-between; /* Pushes title left and nav right */
+    justify-content: space-between;
+    /* Pushes title left and nav right */
     align-items: center;
     padding: 0px 40px;
     height: 70px;
@@ -60,7 +68,8 @@ header {
     color: var(--accent-color);
     position: fixed;
     width: 100%;
-    box-sizing: border-box; /* fix: keep the width at 100% and put the padding inside that space. */
+    box-sizing: border-box;
+    /* fix: keep the width at 100% and put the padding inside that space. */
 }
 
 nav {
@@ -68,7 +77,8 @@ nav {
     align-items: center;
 }
 
-h2, p {
+h2,
+p {
     text-align: center;
     font-family: noto-sans-cjk-jp, sans-serif, "Hiragino Kaku Gothic Pro", "Meiryo", sans-serif;
 }
@@ -79,17 +89,18 @@ h2, p {
 }
 
 img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
 
 }
+
 nav a {
     color: #ffffff;
     margin: 0 15px;
     text-decoration: none;
-    
+
 }
 
 a:hover {
@@ -100,7 +111,8 @@ a:hover {
 main {
     padding: 2px;
     background-color: var(--bg-color);
-    flex: 1; /* push the footer */
+    flex: 1;
+    /* push the footer */
 }
 
 footer {
@@ -120,7 +132,7 @@ footer {
 
 ::selection {
     background: var(--accent-color);
-  }
+}
 
 /* .language-button {
     padding: 8px 15px;
@@ -137,15 +149,17 @@ footer {
     transition: 0.3s;
 } */
 
-nav a, .language-toggle {
+nav a,
+.language-toggle {
     color: var(--accent-color);
     font-weight: bold;
     font-size: 1rem;
     transition: 0.3s;
 }
 
-nav a:hover, .language-toggle:hover {
-    color:white;
+nav a:hover,
+.language-toggle:hover {
+    color: white;
     transition: 0.3s;
 }
 
@@ -185,6 +199,7 @@ ruby {
     ruby-position: over;
     ruby-align: center;
 }
+
 rt {
     display: none;
 }
@@ -198,8 +213,10 @@ body.show-furigana rt {
 .song-list {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align to the left */
-    padding-left: 100px;    /* left-side text padding */
+    align-items: flex-start;
+    /* Align to the left */
+    padding-left: 100px;
+    /* left-side text padding */
     margin-top: 30px;
 }
 
@@ -213,6 +230,7 @@ body.show-furigana rt {
 
 .song-link:hover {
     color: var(--accent-color);
-    transform: translateX(10px); /* move effect on hover */
+    transform: translateX(10px);
+    /* move effect on hover */
     transition: 0.3s;
 }

@@ -28,7 +28,7 @@ function toggleLanguage() {
     const heroText = document.getElementById('hero-text');
     if (heroText) {
         heroText.innerText = homeData[targetLang].title;
-    } 
+    }
     document.getElementById('website-title').innerText = homeData[targetLang].title;
     document.getElementById('nav-home').innerText = homeData[targetLang].home;
     document.getElementById('nav-official').innerText = homeData[targetLang].official;
@@ -56,13 +56,13 @@ function toggleLanguage() {
     localStorage.setItem('preferredLang', currentLang);
 }
 
-window.onload = function() {
+window.onload = function () {
     const urlParams = new URLSearchParams(window.location.search);
     const songID = urlParams.get('song');
 
     if (songID) {
-        const currentSong = songData.find(song => song.title.toLowerCase().replace(/\s+/g,'-') === songID);
-    
+        const currentSong = songData.find(song => song.title.toLowerCase().replace(/\s+/g, '-') === songID);
+
         if (currentSong) {
             document.getElementById('song-title').innerText = currentSong.title;
             document.getElementById('lyric-content').innerHTML = currentSong[currentLang];
@@ -71,7 +71,7 @@ window.onload = function() {
             const spotifyPlayer = document.getElementById('spotify-player');
             if (spotifyPlayer && currentSong.spotifyID) {
                 spotifyPlayer.src = `https://open.spotify.com/embed/track/${currentSong.spotifyID}`;
-            } 
+            }
         }
     }
 
@@ -99,7 +99,7 @@ function toggleFurigana() {
     if (document.body.classList.contains('show-furigana')) {
         furiganaBtn.innerText = "Furigana: ON"
     } else {
-        furiganaBtn.innerText = "Furigana: OFF" 
+        furiganaBtn.innerText = "Furigana: OFF"
     }
 }
 
@@ -114,6 +114,6 @@ if (container) {
         songLink.innerText = song.title; //song title
         songLink.classList.add('song-link');
         container.appendChild(songLink);
-        
+
     });
 } 
