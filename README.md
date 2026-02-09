@@ -27,7 +27,6 @@ Song information is now stored in a separate JavaScript file (songs.js). The hom
 ### 3. Integrated Media & Learning Tools (Refactored)
 Spotify Embed:
 Embedded Spotify player widgets so users can listen to the song while reading the lyrics.
-
 Furigana Toggle:
 Implemented a button to show or hide furigana using the <ruby> HTML tag and JavaScript-based toggling.
 
@@ -49,3 +48,5 @@ Added a hero image with improved typography to give the project a more modern an
 [ ] Search Bar: Create a filter system to find songs by title instantly.
 
 [ ] Flashcards: Add a JLPT vocabulary practice mode based on the lyrics.
+
+[ ] Responsive 
