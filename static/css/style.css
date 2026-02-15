@@ -234,3 +234,22 @@ body.show-furigana rt {
     /* move effect on hover */
     transition: 0.3s;
 }
+
+.furigana-btn {
+    border-style: none;
+    font-size: 12px; 
+    font-weight: 700;   
+    border-radius: 8px;
+    padding: 4px 12px;
+    background-color: var(--accent-color);
+    color: white;
+    border: 3px solid var(--accent--hover);
+    cursor: pointer;
+}
+
+.furigana-btn:hover {
+    background-color: var(--accent--hover);
+    color: white;
+    border: 3px solid var(--accent-color);
+    transition: 0.3s;    
+}
