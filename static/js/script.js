@@ -46,7 +46,7 @@ function toggleLanguage() {
 
     // find currentSong by using URL to get songID instead of using songTitle.innerText
     if (lyricContent && songTitle) {
-        const currentSong = songData.find(song => song.title.replace(/\s+/g, '-').toLowerCase());
+        const currentSong = songData.find(song => getSongSlug(song.title) === getCurrentSongID());
         if (currentSong) {
             lyricContent.innerHTML = currentSong[targetLang];
             /* document.title = `${currentSong.title} | Higedan Bridge`; update title when toggle language */
@@ -55,32 +55,6 @@ function toggleLanguage() {
 
     currentLang = targetLang;
     localStorage.setItem('preferredLang', currentLang);
-}
-
-window.onload = function () {
-    const urlParams = new URLSearchParams(window.location.search);
-    const songID = urlParams.get('song');
-
-    if (songID) {
-        const currentSong = songData.find(song => song.title.replace(/\s+/g, '-').toLowerCase() === songID);
-
-        if (currentSong) {
-            document.title = `${currentSong.title} | Higedan Bridge`; //set Title immediately when finding a song
-            document.getElementById('song-title').innerText = currentSong.title;
-            document.getElementById('lyric-content').innerHTML = currentSong[currentLang];
-            applyTheme(songID);
-
-            const spotifyPlayer = document.getElementById('spotify-player');
-            if (spotifyPlayer && currentSong.spotifyID) {
-                spotifyPlayer.src = `https://open.spotify.com/embed/track/${currentSong.spotifyID}`;
-            }
-        }
-    }
-
-    if (currentLang === 'en') {
-        currentLang = 'jp';
-        toggleLanguage();
-    }
 }
 
 function applyTheme(themeName) {
@@ -105,17 +79,72 @@ function toggleFurigana() {
     }
 }
 
+let songData = [];
 const container = document.getElementById('song-list');
-if (container) {
-    //loop for every song title in songData
-    songData.forEach((song) => {
-        const songLink = document.createElement('a'); //create <a>
-        const slug = song.title.replace(/\s+/g, '-').toLowerCase(); //such as Same Blue to same-blue
-        songLink.href = `lyrics.html?song=${slug}`;
 
-        songLink.innerText = song.title; //song title
+function getSongSlug(title) {
+    return title.replace(/\s+/g, '-').toLowerCase();
+}
+
+function getCurrentSongID() {
+    return new URLSearchParams(window.location.search).get('song');
+}
+
+function findCurrentSong() {
+    const songID = getCurrentSongID();
+    return songData.find(song => getSongSlug(song.title) === songID);
+}
+
+function renderSongList() {
+    if (!container) return;
+    container.innerHTML = '';
+
+    songData.forEach((song) => {
+        const songLink = document.createElement('a');
+        const slug = getSongSlug(song.title);
+        songLink.href = `lyrics.html?song=${slug}`;
+        songLink.innerText = song.title;
         songLink.classList.add('song-link');
         container.appendChild(songLink);
-
     });
+}
+
+async function loadSongData() {
+    try {
+        const response = await fetch('songs.json');
+        if (!response.ok) {
+            throw new Error(`Failed to load songs.json: ${response.status}`);
+        }
+        songData = await response.json();
+        renderSongList();
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+window.onload = async function () {
+    await loadSongData();
+
+    const songID = getCurrentSongID();
+
+    if (songID) {
+        const currentSong = findCurrentSong();
+
+        if (currentSong) {
+            document.title = `${currentSong.title} | Higedan Bridge`;
+            document.getElementById('song-title').innerText = currentSong.title;
+            document.getElementById('lyric-content').innerHTML = currentSong[currentLang];
+            applyTheme(songID);
+
+            const spotifyPlayer = document.getElementById('spotify-player');
+            if (spotifyPlayer && currentSong.spotifyID) {
+                spotifyPlayer.src = `https://open.spotify.com/embed/track/${currentSong.spotifyID}`;
+            }
+        }
+    }
+
+    if (currentLang === 'en') {
+        currentLang = 'jp';
+        toggleLanguage();
+    }
 } 
